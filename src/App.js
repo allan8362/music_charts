@@ -3,7 +3,6 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 import HomeContainer from './containers/HomeContainer';
 import MusicContainer from './containers/MusicContainer';
 import NavBar from './components/NavBar';
-import './App.css';
 
 class App extends Component {
   render(){

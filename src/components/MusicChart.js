@@ -7,9 +7,13 @@ const MusicChart = (props) => {
   }
 
   const listItems = props.charts.map((song, index) => {
-    return <li value={index} key={index}>
-    {index+1}: {song['im:name'].label} - {song['im:artist'].label}
-    </li>
+    return (
+        <div value={index} key={index}>
+          <p>{index+1}: {song['im:name'].label} - {song['im:artist'].label}</p>
+          <img src={song['im:image'][0].label} alt="record-cover"/>
+        </div>
+    )
+
   });
 
   return(
