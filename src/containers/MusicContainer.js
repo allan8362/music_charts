@@ -19,7 +19,7 @@ class MusicContainer extends Component{
   render(){
     return(
       <div>
-      <h3>Music Charts</h3>
+      <h3>Charts</h3>
       <MusicChart charts={this.state.charts} />
       </div>
     )
